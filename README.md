@@ -2,15 +2,15 @@
 
 ## Paper data and code
 
-This is the code for our AAAI 2019 Paper: [Session-based Recommendation with Graph Neural Networks](https://arxiv.org/abs/1811.00855). We implemented our model in both **Tensorflow** and **Pytorch**.
+This is the code for the AAAI 2019 Paper: [Session-based Recommendation with Graph Neural Networks](https://arxiv.org/abs/1811.00855). We have implemented our methods in both **Tensorflow** and **Pytorch**.
 
-Here are two datasets we used in our paper. After download the datasets, you can put them in the folder `datasets/`:
+Here are two datasets we used in our paper. After downloaded the datasets, you can put them in the folder `datasets/`:
 
 - YOOCHOOSE: <http://2015.recsyschallenge.com/challenge.html>
 
 - DIGINETICA: <http://cikm2016.cs.iupui.edu/cikm-cup>
 
-There is a small dataset `sample` included in the folder `datasets/`, which could be used to test the correctness of the code.
+There is a small dataset `sample` included in the folder `datasets/`, which can be used to test the correctness of the code.
 
 ## Usage
 
@@ -68,3 +68,17 @@ optional arguments:
 
 - Python 3
 - PyTorch 0.4.0 or Tensorflow 1.9.0
+
+## Citation
+
+Please cite our paper:
+
+```
+@paper{SRGNN2018,
+	author = {Shu Wu and Yuyuan Tang and Yanqiao Zhu and Liang Wang and Xing Xie and Tieniu Tan},
+	title = {Session-based Recommendation with Graph Neural Networks},
+	conference = {AAAI Conference on Artificial Intelligence},
+	year = {2019}
+}
+```
+
