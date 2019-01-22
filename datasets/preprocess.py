@@ -46,7 +46,10 @@ with open(dataset, "r") as f:
                 date = time.mktime(time.strptime(curdate, '%Y-%m-%d'))
             sess_date[curid] = date
         curid = sessid
-        item = data['item_id']
+        if opt.dataset == 'yoochoose':
+            item = data['item_id']
+        else:
+            item = data['item_id'], int(data['timeframe'])
         curdate = ''
         if opt.dataset == 'yoochoose':
             curdate = data['timestamp']
@@ -63,6 +66,9 @@ with open(dataset, "r") as f:
         date = time.mktime(time.strptime(curdate[:19], '%Y-%m-%dT%H:%M:%S'))
     else:
         date = time.mktime(time.strptime(curdate, '%Y-%m-%d'))
+        for i in list(sess_clicks):
+            sorted_clicks = sorted(sess_clicks[i], key=operator.itemgetter(1))
+            sess_clicks[i] = [c[0] for c in sorted_clicks]
     sess_date[curid] = date
 print("-- Reading data @ %ss" % datetime.datetime.now())
 
@@ -207,7 +213,7 @@ if opt.dataset == 'diginetica':
         os.makedirs('diginetica')
     pickle.dump(tra, open('diginetica/train.txt', 'wb'))
     pickle.dump(tes, open('diginetica/test.txt', 'wb'))
-    pickle.dump(tra_seqs, open('diginetica/tra_all_seq.txt', 'wb'))
+    pickle.dump(tra_seqs, open('diginetica/all_train_seq.txt', 'wb'))
 elif opt.dataset == 'yoochoose':
     if not os.path.exists('yoochoose1_4'):
         os.makedirs('yoochoose1_4')
