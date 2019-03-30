@@ -71,14 +71,16 @@ optional arguments:
 
 ## Citation
 
-Please cite our paper:
+Please cite our paper if you use the code:
 
 ```
-@paper{SRGNN2018,
-	author = {Shu Wu and Yuyuan Tang and Yanqiao Zhu and Liang Wang and Xing Xie and Tieniu Tan},
+@inproceedings{Wu:2019vb,
+    author = {Wu, Shu and Tang, Yuyuan and Zhu, Yanqiao and Wang, Liang and Xie, Xing and Tan, Tieniu},
 	title = {Session-based Recommendation with Graph Neural Networks},
-	conference = {AAAI Conference on Artificial Intelligence},
-	year = {2019}
+	booktitle = {Proceedings of The Twenty-Third AAAI Conference on Artificial Intelligence},
+	series = {AAAI '19},
+	year = {2019},
+	url = {http://arxiv.org/abs/1811.00855}
 }
 ```
 
