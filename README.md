@@ -12,7 +12,7 @@ Here are two datasets we used in our paper. After downloaded the datasets, you c
 
 There is a small dataset `sample` included in the folder `datasets/`, which can be used to test the correctness of the code.
 
-We have also written a [[blog]](https://sxkdz.github.io/research/SR-GNN) explaining the paper.
+We have also written a [blog](https://sxkdz.github.io/research/SR-GNN) explaining the paper.
 
 ## Usage
 
