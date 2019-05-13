@@ -69,6 +69,12 @@ optional arguments:
 - Python 3
 - PyTorch 0.4.0 or Tensorflow 1.9.0
 
+## Other Implementation for Reference
+There are other implementation available for reference:
+- Implementation based on PaddlePaddle by Baidu [[Link]](https://github.com/PaddlePaddle/models/tree/develop/PaddleRec/gnn)
+- Implementation based on PyTorch Geometric [[Link]](https://github.com/RuihongQiu/SR-GNN_PyTorch-Geometric)
+- Another implementation based on Tensorflow [[Link]](https://github.com/jimanvlad/SR-GNN)
+
 ## Citation
 
 Please cite our paper if you use the code:
