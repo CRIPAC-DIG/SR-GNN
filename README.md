@@ -76,6 +76,7 @@ There are other implementation available for reference:
 - Implementation based on PaddlePaddle by Baidu [[Link]](https://github.com/PaddlePaddle/models/tree/develop/PaddleRec/gnn)
 - Implementation based on PyTorch Geometric [[Link]](https://github.com/RuihongQiu/SR-GNN_PyTorch-Geometric)
 - Another implementation based on Tensorflow [[Link]](https://github.com/jimanvlad/SR-GNN)
+- Yet another implementation based on Tensorflow [[Link]](https://github.com/loserChen/TensorFlow-In-Practice/tree/master/SRGNN)
 
 ## Citation
 
