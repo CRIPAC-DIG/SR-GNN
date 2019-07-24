@@ -12,11 +12,13 @@ Here are two datasets we used in our paper. After downloaded the datasets, you c
 
 There is a small dataset `sample` included in the folder `datasets/`, which can be used to test the correctness of the code.
 
+We have also written a [blog](https://sxkdz.github.io/research/SR-GNN) explaining the paper.
+
 ## Usage
 
 You need to run the file  `datasets/preprocess.py` first to preprocess the data.
 
-​    For example: `cd datasets; python preprocess.py --dataset=sample`
+For example: `cd datasets; python preprocess.py --dataset=sample`
 
 ```bash
 usage: preprocess.py [-h] [--dataset DATASET]
@@ -28,7 +30,7 @@ optional arguments:
 
 Then you can run the file `pytorch_code/main.py` or `tensorflow_code/main.py` to train the model.
 
-​    For example: `cd pytorch_code; python main.py --dataset=sample`
+For example: `cd pytorch_code; python main.py --dataset=sample`
 
 You can add the suffix `--nonhybrid` to use the global preference of a session graph to recommend instead of the hybrid preference.
 
@@ -68,6 +70,13 @@ optional arguments:
 
 - Python 3
 - PyTorch 0.4.0 or Tensorflow 1.9.0
+
+## Other Implementation for Reference
+There are other implementation available for reference:
+- Implementation based on PaddlePaddle by Baidu [[Link]](https://github.com/PaddlePaddle/models/tree/develop/PaddleRec/gnn)
+- Implementation based on PyTorch Geometric [[Link]](https://github.com/RuihongQiu/SR-GNN_PyTorch-Geometric)
+- Another implementation based on Tensorflow [[Link]](https://github.com/jimanvlad/SR-GNN)
+- Yet another implementation based on Tensorflow [[Link]](https://github.com/loserChen/TensorFlow-In-Practice/tree/master/SRGNN)
 
 ## Citation
 
